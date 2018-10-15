@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_bg"
+    tools:context="com.example.pet.orderfoods280918.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/logo_eat_it"
+            android:layout_width="200dp"
+            android:layout_height="100dp"/>
+        <TextView
+            android:textSize="18dp"
+            android:textColor="#ffffff"
+            android:id="@+id/txtSologan"
+            android:text="@string/sologan"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <info.hoang8f.widget.FButton
+            android:layout_weight="1"
+            android:id="@+id/btnSignup"
+            android:textColor="@color/colorWhite"
+            android:text="Sign Up"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/colorBlack"
+            app:shadowEnabled="true"
+            app:shadowHeight="4dp"
+            android:layout_margin="8dp"
+            app:cornerRadius="4dp"
+            app:buttonColor="@color/colorSignUp"
+            />
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnSignIn"
+            android:textColor="@color/colorWhite"
+            app:buttonColor="@color/colorSignIn"
+            android:text="Sign In"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            app:cornerRadius="4dp"
+            app:shadowEnabled="true"
+            app:shadowHeight="4dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>
